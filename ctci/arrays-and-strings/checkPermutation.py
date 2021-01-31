@@ -1,4 +1,5 @@
 import sys
+from time import perf_counter 
 
 """ 1.2 Given two strings, write a method to decide if one is permutation of the other. """
 
@@ -33,7 +34,10 @@ def main():
     if (len(sys.argv) > 2):
         str1 = sys.argv[1]
         str2 = sys.argv[2]
-        print(checkPermutation(str1, str2))
+        timerStart = perf_counter() 
+        print("Result: ", checkPermutation(str1, str2))
+        timerStop = perf_counter()
+        print("Elapsed time: ", timerStop-timerStart) 
     else:
         print("Requires two arguments.")
 
