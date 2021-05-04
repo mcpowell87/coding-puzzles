@@ -1,5 +1,5 @@
 import pytest
-from ctci.arrays_and_strings.oneAway import one_away
+from ctci.arrays_and_strings.one_away import one_away
 
 def test_case_1():
     assert(one_away("pale", "ple"))

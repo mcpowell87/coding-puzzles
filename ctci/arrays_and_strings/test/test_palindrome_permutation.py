@@ -1,5 +1,5 @@
 import pytest
-from ctci.arrays_and_strings.palindromePermutation import is_palindrome_permutation
+from ctci.arrays_and_strings.palindrome_permutation import is_palindrome_permutation
 
 def test_case_example():
     assert(is_palindrome_permutation("Tact Coa"))

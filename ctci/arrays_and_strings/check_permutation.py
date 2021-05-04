@@ -3,7 +3,7 @@ from time import perf_counter
 
 """ 1.2 Given two strings, write a method to decide if one is permutation of the other. """
 
-def checkPermutation(str1, str2):
+def check_permutation(str1, str2):
     hash1 = {}
     hash2 = {}
     if (len(str1) != len(str2)):
@@ -30,16 +30,13 @@ def checkPermutation(str1, str2):
     
     return True
 
-def main():
+if __name__ == '__main__':
     if (len(sys.argv) > 2):
         str1 = sys.argv[1]
         str2 = sys.argv[2]
         timerStart = perf_counter() 
-        print("Result: ", checkPermutation(str1, str2))
+        print("Result: ", check_permutation(str1, str2))
         timerStop = perf_counter()
         print("Elapsed time: ", timerStop-timerStart) 
     else:
         print("Requires two arguments.")
-
-if __name__ == '__main__':
-    main()
